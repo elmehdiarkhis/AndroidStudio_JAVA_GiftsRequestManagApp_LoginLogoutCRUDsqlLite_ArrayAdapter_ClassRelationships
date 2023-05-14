@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        tools:context=".MainActivity">
+
+        <!--text view for heading-->
+        <TextView
+            android:id="@+id/idTVHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#008577"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Souhait de noel"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/i_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Nom" />
+
+        <EditText
+            android:id="@+id/i_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Prenom" />
+
+        <EditText
+            android:id="@+id/i_pays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Pays" />
+
+        <EditText
+            android:id="@+id/i_ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="218dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Ville" />
+
+
+        <EditText
+            android:id="@+id/i_codeP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="269dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Code Postal" />
+
+        <EditText
+            android:id="@+id/i_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="324dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Age" />
+
+
+        <EditText
+            android:id="@+id/i_cadeau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="373dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Cadeau" />
+
+
+        <EditText
+            android:id="@+id/i_nivDeSagess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Niveau de Sagesse" />
+
+        <EditText
+            android:id="@+id/i_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="483dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Username" />
+
+        <EditText
+            android:id="@+id/i_Pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Entrer votre Password" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/idBtnTryToRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#008577"
+        android:onClick="soumettre"
+        android:text="Soummettre ma demande de CADEAU!!"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.722" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
